@@ -1,10 +1,5 @@
 <?
-/* A quick API using the query string 
-this script accepts a string as api/?q=item1/item2/item3
-where the value of item1 is in $q_arr[0]
-I will leave it to the implementer to clean and validate the incoming data
-this is for dev purposes only 
-*/
+/* A quick REST API the htaccess is included and needs to have mod_rewrite on the server*/
 
 if($_SERVER['REQUEST_METHOD'] == 'GET'){
     // get query string  q
