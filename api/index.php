@@ -5,7 +5,6 @@ if($_SERVER['REQUEST_METHOD'] == 'GET'){
     // get query string  q
     $q = $_SERVER['QUERY_STRING'];
     $q_arr = explode("/",$q);
-    $q_arr[0] = ltrim($q_arr[0],"q=");
     $data = $q_arr;
     //////
     // switch($q_arr[0]){
